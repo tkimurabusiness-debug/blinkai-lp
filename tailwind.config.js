@@ -5,19 +5,19 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: '#003db8',
+          DEFAULT: '#0035A3',
           light: '#0052E6',
-          dark: '#002A80',
-          50: '#E6EEFF',
-          100: '#CCDEFF',
-          200: '#99BCFF',
-          300: '#669BFF',
-          400: '#3379FF',
-          500: '#003db8',
-          600: '#0035A3',
-          700: '#002A80',
-          800: '#001F5C',
-          900: '#001439',
+          dark: '#002270',
+          50: '#EBF0FF',
+          100: '#D6E1FF',
+          200: '#ADC3FF',
+          300: '#85A5FF',
+          400: '#5C87FF',
+          500: '#0035A3',
+          600: '#002D8A',
+          700: '#002270',
+          800: '#001A57',
+          900: '#00113D',
         },
         secondary: '#10B981',
         accent: '#F59E0B',
@@ -27,14 +27,18 @@ export default {
         sans: [
           'Noto Sans JP',
           'Noto Sans',
+          'Inter',
           'sans-serif',
         ],
       },
       animation: {
-        'fade-in': 'fadeIn 0.6s ease-out',
-        'slide-up': 'slideUp 0.6s ease-out',
+        'fade-in': 'fadeIn 0.8s ease-out',
+        'slide-up': 'slideUp 0.8s ease-out',
         'count-up': 'countUp 1s ease-out',
         'float': 'float 3s ease-in-out infinite',
+        'slide-in-right': 'slideInRight 0.6s ease-out',
+        'slide-in-left': 'slideInLeft 0.6s ease-out',
+        'marquee': 'marquee 30s linear infinite',
       },
       keyframes: {
         fadeIn: {
@@ -48,6 +52,18 @@ export default {
         float: {
           '0%, 100%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-10px)' },
+        },
+        slideInRight: {
+          '0%': { opacity: '0', transform: 'translateX(60px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        slideInLeft: {
+          '0%': { opacity: '0', transform: 'translateX(-60px)' },
+          '100%': { opacity: '1', transform: 'translateX(0)' },
+        },
+        marquee: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
       },
     },

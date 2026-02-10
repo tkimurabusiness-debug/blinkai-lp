@@ -9,31 +9,38 @@ export default function Pricing() {
   const items = t('pricing.items', { returnObjects: true })
 
   return (
-    <section className="py-20 md:py-28 bg-white" id="pricing">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="section-title">{t('pricing.title')}</h2>
-          <p className="section-subtitle">{t('pricing.subtitle')}</p>
+    <section className="py-28 md:py-36 bg-white" id="pricing">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="mb-20">
+          <p className="text-xs font-semibold tracking-[0.2em] text-primary uppercase mb-6">
+            PRICING
+          </p>
+          <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight tracking-tight mb-6">
+            {t('pricing.title')}
+          </h2>
+          <p className="text-lg text-gray-500 max-w-2xl">
+            {t('pricing.subtitle')}
+          </p>
         </div>
 
         <div
           ref={ref}
-          className={`max-w-lg mx-auto transition-all duration-700 ${
-            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          className={`max-w-lg transition-all duration-1000 ${
+            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
           }`}
         >
-          <div className="bg-white border-2 border-primary rounded-3xl shadow-xl overflow-hidden">
-            <div className="bg-primary p-8 text-center">
-              <p className="text-primary-200 text-sm font-medium mb-2">{t('pricing.freeLabel')}</p>
-              <p className="text-6xl font-black text-white">{t('pricing.free')}</p>
+          <div className="bg-white border border-gray-200 rounded-3xl overflow-hidden">
+            <div className="bg-gray-950 p-10 text-center">
+              <p className="text-gray-400 text-sm font-medium mb-3">{t('pricing.freeLabel')}</p>
+              <p className="text-6xl font-black text-white tracking-tight">{t('pricing.free')}</p>
             </div>
 
-            <div className="p-8">
+            <div className="p-10">
               <div className="space-y-4">
                 {items.map((item, i) => (
-                  <div key={i} className="flex items-center justify-between py-3 border-b border-gray-100 last:border-0">
-                    <span className="text-gray-600">{item.label}</span>
-                    <span className={`font-bold ${item.value === '成果報酬' || item.value === 'Trả phí' || item.value === 'सफलता शुल्क' ? 'text-accent' : 'text-secondary'}`}>
+                  <div key={i} className="flex items-center justify-between py-4 border-b border-gray-100 last:border-0">
+                    <span className="text-gray-600 text-sm">{item.label}</span>
+                    <span className={`font-bold text-sm ${item.value === '成果報酬' || item.value === 'Trả phí' || item.value === 'सफलता शुल्क' ? 'text-primary' : 'text-secondary'}`}>
                       {item.value}
                     </span>
                   </div>
@@ -42,7 +49,7 @@ export default function Pricing() {
 
               <p className="text-xs text-gray-400 text-center mt-6">{t('pricing.note')}</p>
 
-              <Link to="/for-companies#contact" className="btn-primary w-full mt-6 justify-center">
+              <Link to="/for-companies#contact" className="btn-primary w-full mt-8 justify-center">
                 {t('hero.cta')}
               </Link>
             </div>

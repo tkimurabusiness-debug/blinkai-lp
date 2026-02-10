@@ -1,11 +1,44 @@
 {
   "nav": {
     "home": "ホーム",
+    "about": "ABOUT",
+    "solution": "SOLUTION",
     "forCompanies": "企業様へ",
     "forJobSeekers": "お仕事をお探しの方へ",
     "contact": "お問い合わせ",
     "phone": "03-XXXX-XXXX",
     "freeCta": "無料相談する"
+  },
+  "homeHero": {
+    "tagline": "距離を超える。常識を超える。",
+    "title1": "テクノロジーで、",
+    "titleHighlight": "人材の未来",
+    "title2": "をつくる。",
+    "subtitle": "AIを活用した外国人材マッチングプラットフォーム。企業と求職者、双方の課題を解決します。"
+  },
+  "about": {
+    "label": "ABOUT",
+    "title": "私たちについて",
+    "description": "BlinkAIは、AI技術を活用して外国人材と日本企業をつなぐマッチングプラットフォームです。建設・製造・物流・食品加工などのブルーカラー領域に特化し、人手不足という社会課題の解決に取り組んでいます。",
+    "mission": "テクノロジーの力で、国境を越えた最適な人材マッチングを実現し、すべての人が自分らしく働ける社会をつくる。",
+    "missionLabel": "MISSION"
+  },
+  "solutions": {
+    "label": "SOLUTION",
+    "title": "事業紹介",
+    "subtitle": "企業と求職者、双方のニーズに応えるサービスを展開しています",
+    "forCompanies": {
+      "title": "企業様向けサービス",
+      "subtitle": "For Companies",
+      "description": "AIマッチングで最適な外国人材を最短3日でご紹介。完全成果報酬型で、採用決定まで費用はかかりません。ビザ手続きまで一括サポート。",
+      "cta": "企業様向けサービスを見る"
+    },
+    "forJobSeekers": {
+      "title": "求職者向けサービス",
+      "subtitle": "For Job Seekers",
+      "description": "LINEで簡単登録。母国語で相談でき、あなたに合ったお仕事を完全無料でご紹介します。ビザ手続きのサポートも万全。",
+      "cta": "お仕事を探す"
+    }
   },
   "hero": {
     "badge": "外国人材マッチングプラットフォーム",

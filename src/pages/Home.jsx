@@ -1,24 +1,20 @@
-import Hero from '../components/sections/Hero'
-import LogoBar from '../components/sections/LogoBar'
+import HomeHero from '../components/sections/HomeHero'
+import About from '../components/sections/About'
+import Solutions from '../components/sections/Solutions'
 import Features from '../components/sections/Features'
 import Numbers from '../components/sections/Numbers'
-import Target from '../components/sections/Target'
-import Testimonials from '../components/sections/Testimonials'
-import Worries from '../components/sections/Worries'
 import Flow from '../components/sections/Flow'
-import FinalCTA from '../components/sections/FinalCTA'
 import FAQ from '../components/sections/FAQ'
+import FinalCTA from '../components/sections/FinalCTA'
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <LogoBar />
+      <HomeHero />
+      <About />
+      <Solutions />
       <Features />
       <Numbers />
-      <Target />
-      <Testimonials />
-      <Worries />
       <Flow />
       <FAQ />
       <FinalCTA />

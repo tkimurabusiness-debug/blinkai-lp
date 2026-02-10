@@ -4,12 +4,14 @@ import Features from '../components/sections/Features'
 import Numbers from '../components/sections/Numbers'
 import Target from '../components/sections/Target'
 import Testimonials from '../components/sections/Testimonials'
+import CaseStudies from '../components/sections/CaseStudies'
 import Worries from '../components/sections/Worries'
 import Pricing from '../components/sections/Pricing'
 import Flow from '../components/sections/Flow'
 import FinalCTA from '../components/sections/FinalCTA'
 import ContactForm from '../components/sections/ContactForm'
 import FAQ from '../components/sections/FAQ'
+import FloatingCTA from '../components/common/FloatingCTA'
 
 export default function ForCompanies() {
   return (
@@ -17,6 +19,7 @@ export default function ForCompanies() {
       <Hero />
       <LogoBar />
       <Features />
+      <CaseStudies />
       <Numbers />
       <Target />
       <Testimonials />
@@ -26,6 +29,7 @@ export default function ForCompanies() {
       <FinalCTA />
       <ContactForm />
       <FAQ />
+      <FloatingCTA variant="company" />
     </>
   )
 }

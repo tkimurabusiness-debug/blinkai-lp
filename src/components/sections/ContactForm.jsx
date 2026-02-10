@@ -31,46 +31,53 @@ export default function ContactForm() {
 
   function handleSubmit(e) {
     e.preventDefault()
-    // In production, this would submit to an API
     console.log('Form submitted:', formData)
     setSubmitted(true)
   }
 
   if (submitted) {
     return (
-      <section className="py-20 bg-gray-50" id="contact">
-        <div className="max-w-2xl mx-auto px-4 text-center">
-          <div className="card py-16">
+      <section className="py-28 bg-gray-50" id="contact">
+        <div className="max-w-2xl mx-auto px-6 text-center">
+          <div className="bg-white rounded-3xl p-16 border border-gray-100">
             <CheckCircle2 className="w-16 h-16 text-secondary mx-auto mb-6" />
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold text-gray-900 mb-4 tracking-tight">
               送信完了しました
             </h2>
-            <p className="text-gray-600">24時間以内にご連絡いたします。</p>
+            <p className="text-gray-500">24時間以内にご連絡いたします。</p>
           </div>
         </div>
       </section>
     )
   }
 
+  const inputClass = "w-full px-4 py-3.5 border border-gray-200 rounded-xl focus:ring-2 focus:ring-primary/10 focus:border-primary outline-none transition-all bg-gray-50/50 focus:bg-white text-sm"
+
   return (
-    <section className="py-20 md:py-28 bg-gray-50" id="contact">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="section-title">{t('contactForm.title')}</h2>
-          <p className="section-subtitle">{t('contactForm.subtitle')}</p>
+    <section className="py-28 md:py-36 bg-gray-50" id="contact">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="mb-20">
+          <p className="text-xs font-semibold tracking-[0.2em] text-primary uppercase mb-6">
+            CONTACT
+          </p>
+          <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight tracking-tight mb-6">
+            {t('contactForm.title')}
+          </h2>
+          <p className="text-lg text-gray-500 max-w-2xl">
+            {t('contactForm.subtitle')}
+          </p>
         </div>
 
         <div
           ref={ref}
-          className={`max-w-2xl mx-auto transition-all duration-700 ${
-            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          className={`max-w-2xl transition-all duration-1000 ${
+            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
           }`}
         >
-          <form onSubmit={handleSubmit} className="bg-white rounded-2xl shadow-xl p-8 md:p-10">
+          <form onSubmit={handleSubmit} className="bg-white rounded-3xl border border-gray-100 p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-6">
-              {/* Company Name */}
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-xs font-semibold text-gray-900 mb-2 tracking-wide uppercase">
                   {t('contactForm.companyName')} <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -80,13 +87,12 @@ export default function ContactForm() {
                   value={formData.companyName}
                   onChange={handleChange}
                   placeholder={t('contactForm.companyPlaceholder')}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                  className={inputClass}
                 />
               </div>
 
-              {/* Name */}
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-xs font-semibold text-gray-900 mb-2 tracking-wide uppercase">
                   {t('contactForm.name')} <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -96,13 +102,12 @@ export default function ContactForm() {
                   value={formData.name}
                   onChange={handleChange}
                   placeholder={t('contactForm.namePlaceholder')}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                  className={inputClass}
                 />
               </div>
 
-              {/* Phone */}
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-xs font-semibold text-gray-900 mb-2 tracking-wide uppercase">
                   {t('contactForm.phone')} <span className="text-red-500">*</span>
                 </label>
                 <input
@@ -112,13 +117,12 @@ export default function ContactForm() {
                   value={formData.phone}
                   onChange={handleChange}
                   placeholder={t('contactForm.phonePlaceholder')}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                  className={inputClass}
                 />
               </div>
 
-              {/* Email */}
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-xs font-semibold text-gray-900 mb-2 tracking-wide uppercase">
                   {t('contactForm.email')}
                 </label>
                 <input
@@ -127,20 +131,19 @@ export default function ContactForm() {
                   value={formData.email}
                   onChange={handleChange}
                   placeholder={t('contactForm.emailPlaceholder')}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                  className={inputClass}
                 />
               </div>
 
-              {/* Industry */}
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-xs font-semibold text-gray-900 mb-2 tracking-wide uppercase">
                   {t('contactForm.industry')}
                 </label>
                 <select
                   name="industry"
                   value={formData.industry}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all bg-white"
+                  className={inputClass}
                 >
                   <option value="">---</option>
                   {industryOptions.map((opt, i) => (
@@ -149,16 +152,15 @@ export default function ContactForm() {
                 </select>
               </div>
 
-              {/* Headcount */}
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-xs font-semibold text-gray-900 mb-2 tracking-wide uppercase">
                   {t('contactForm.headcount')}
                 </label>
                 <select
                   name="headcount"
                   value={formData.headcount}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all bg-white"
+                  className={inputClass}
                 >
                   <option value="">---</option>
                   {headcountOptions.map((opt, i) => (
@@ -168,9 +170,8 @@ export default function ContactForm() {
               </div>
             </div>
 
-            {/* Message */}
             <div className="mt-6">
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
+              <label className="block text-xs font-semibold text-gray-900 mb-2 tracking-wide uppercase">
                 {t('contactForm.message')}
               </label>
               <textarea
@@ -179,11 +180,10 @@ export default function ContactForm() {
                 value={formData.message}
                 onChange={handleChange}
                 placeholder={t('contactForm.messagePlaceholder')}
-                className="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all resize-none"
+                className={`${inputClass} resize-none`}
               />
             </div>
 
-            {/* Privacy */}
             <label className="flex items-center gap-3 mt-6 cursor-pointer">
               <input
                 type="checkbox"
@@ -196,10 +196,9 @@ export default function ContactForm() {
               <span className="text-sm text-gray-600">{t('contactForm.privacy')}</span>
             </label>
 
-            {/* Submit */}
             <button
               type="submit"
-              className="btn-primary w-full mt-8 justify-center text-lg"
+              className="btn-primary w-full mt-8 justify-center"
             >
               <Send className="w-5 h-5 mr-2" />
               {t('contactForm.submit')}

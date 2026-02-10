@@ -1,11 +1,44 @@
 {
   "nav": {
     "home": "Trang chủ",
+    "about": "ABOUT",
+    "solution": "SOLUTION",
     "forCompanies": "Dành cho doanh nghiệp",
     "forJobSeekers": "Tìm việc làm",
     "contact": "Liên hệ",
     "phone": "03-XXXX-XXXX",
     "freeCta": "Tư vấn miễn phí"
+  },
+  "homeHero": {
+    "tagline": "Vượt qua khoảng cách. Vượt qua giới hạn.",
+    "title1": "Bằng công nghệ,",
+    "titleHighlight": "tương lai nhân lực",
+    "title2": "được tạo nên.",
+    "subtitle": "Nền tảng kết nối nhân lực nước ngoài bằng AI. Giải quyết vấn đề cho cả doanh nghiệp và người tìm việc."
+  },
+  "about": {
+    "label": "ABOUT",
+    "title": "Về chúng tôi",
+    "description": "BlinkAI là nền tảng kết nối nhân lực nước ngoài với doanh nghiệp Nhật Bản bằng công nghệ AI. Chuyên biệt cho các ngành xây dựng, sản xuất, vận tải, chế biến thực phẩm, giải quyết vấn đề thiếu nhân lực.",
+    "mission": "Bằng sức mạnh công nghệ, thực hiện kết nối nhân lực tối ưu vượt biên giới, tạo ra xã hội nơi mọi người đều có thể làm việc phù hợp.",
+    "missionLabel": "MISSION"
+  },
+  "solutions": {
+    "label": "SOLUTION",
+    "title": "Giới thiệu dịch vụ",
+    "subtitle": "Cung cấp dịch vụ đáp ứng nhu cầu của cả doanh nghiệp và người tìm việc",
+    "forCompanies": {
+      "title": "Dịch vụ cho doanh nghiệp",
+      "subtitle": "For Companies",
+      "description": "Giới thiệu nhân lực nước ngoài phù hợp nhất chỉ trong 3 ngày bằng AI. Chỉ trả phí khi tuyển dụng thành công. Hỗ trợ thủ tục visa trọn gói.",
+      "cta": "Xem dịch vụ doanh nghiệp"
+    },
+    "forJobSeekers": {
+      "title": "Dịch vụ cho người tìm việc",
+      "subtitle": "For Job Seekers",
+      "description": "Đăng ký dễ dàng qua LINE. Tư vấn bằng tiếng mẹ đẻ, giới thiệu việc phù hợp hoàn toàn miễn phí. Hỗ trợ đầy đủ thủ tục visa.",
+      "cta": "Tìm việc làm"
+    }
   },
   "hero": {
     "badge": "Nền tảng kết nối nhân lực nước ngoài",

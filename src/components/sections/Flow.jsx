@@ -10,37 +10,52 @@ export default function Flow() {
   const steps = t('flow.steps', { returnObjects: true })
 
   return (
-    <section className="py-20 md:py-28 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="section-title">{t('flow.title')}</h2>
-          <p className="section-subtitle">{t('flow.subtitle')}</p>
+    <section className="py-28 md:py-36 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="mb-20">
+          <p className="text-xs font-semibold tracking-[0.2em] text-primary uppercase mb-6">
+            FLOW
+          </p>
+          <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight tracking-tight mb-6">
+            {t('flow.title')}
+          </h2>
+          <p className="text-lg text-gray-500 max-w-2xl">
+            {t('flow.subtitle')}
+          </p>
         </div>
 
         <div
           ref={ref}
-          className={`grid md:grid-cols-4 gap-6 max-w-4xl mx-auto transition-all duration-700 ${
-            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          className={`grid md:grid-cols-4 gap-8 transition-all duration-1000 ${
+            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
           }`}
         >
           {steps.map((step, i) => {
             const Icon = stepIcons[i]
             return (
-              <div key={i} className="relative text-center">
+              <div key={i} className="relative group">
                 {/* Connector line */}
                 {i < steps.length - 1 && (
-                  <div className="hidden md:block absolute top-10 left-1/2 w-full h-0.5 bg-primary/20 z-0" />
+                  <div className="hidden md:block absolute top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-px bg-gray-200" />
                 )}
 
-                <div className="relative z-10">
-                  <div className="w-20 h-20 mx-auto mb-4 bg-white rounded-2xl shadow-lg flex items-center justify-center border-2 border-primary/10">
-                    <div className="absolute -top-3 -right-1 w-7 h-7 bg-primary text-white rounded-full flex items-center justify-center text-xs font-bold">
+                <div className="relative z-10 text-center">
+                  {/* Step number + icon */}
+                  <div className="relative w-16 h-16 mx-auto mb-6">
+                    <div className="w-full h-full bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-center group-hover:border-primary/20 group-hover:shadow-md transition-all">
+                      <Icon className="w-7 h-7 text-primary" />
+                    </div>
+                    <div className="absolute -top-2 -right-2 w-6 h-6 bg-gray-900 text-white rounded-full flex items-center justify-center text-xs font-bold">
                       {i + 1}
                     </div>
-                    <Icon className="w-8 h-8 text-primary" />
                   </div>
-                  <h3 className="font-bold text-gray-900 mb-2">{step.title}</h3>
-                  <p className="text-sm text-gray-500">{step.desc}</p>
+
+                  <h3 className="font-bold text-gray-900 mb-2 tracking-tight">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-gray-500 leading-relaxed">
+                    {step.desc}
+                  </p>
                 </div>
               </div>
             )

@@ -8,9 +8,9 @@ function AccordionItem({ q, a, isOpen, onClick }) {
     <div className="border-b border-gray-100 last:border-0">
       <button
         onClick={onClick}
-        className="w-full flex items-center justify-between py-5 text-left group"
+        className="w-full flex items-center justify-between py-6 text-left group"
       >
-        <span className="font-semibold text-gray-900 pr-4 group-hover:text-primary transition-colors">
+        <span className="font-semibold text-gray-900 pr-4 group-hover:text-primary transition-colors tracking-tight">
           {q}
         </span>
         <ChevronDown
@@ -21,7 +21,7 @@ function AccordionItem({ q, a, isOpen, onClick }) {
       </button>
       <div
         className={`overflow-hidden transition-all duration-300 ${
-          isOpen ? 'max-h-40 opacity-100 pb-5' : 'max-h-0 opacity-0'
+          isOpen ? 'max-h-40 opacity-100 pb-6' : 'max-h-0 opacity-0'
         }`}
       >
         <p className="text-gray-600 text-sm leading-relaxed">{a}</p>
@@ -37,27 +37,36 @@ export default function FAQ({ faqKey = 'faq' }) {
   const items = t(`${faqKey}.items`, { returnObjects: true })
 
   return (
-    <section className="py-20 md:py-28 bg-white" id="faq">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="section-title">{t(`${faqKey}.title`)}</h2>
-        </div>
+    <section className="py-28 md:py-36 bg-white" id="faq">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
+          {/* Left - Title */}
+          <div>
+            <p className="text-xs font-semibold tracking-[0.2em] text-primary uppercase mb-6">
+              FAQ
+            </p>
+            <h2 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight tracking-tight">
+              {t(`${faqKey}.title`)}
+            </h2>
+          </div>
 
-        <div
-          ref={ref}
-          className={`max-w-3xl mx-auto bg-white rounded-2xl shadow-lg p-6 md:p-10 transition-all duration-700 ${
-            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-          }`}
-        >
-          {items.map((item, i) => (
-            <AccordionItem
-              key={i}
-              q={item.q}
-              a={item.a}
-              isOpen={openIndex === i}
-              onClick={() => setOpenIndex(openIndex === i ? -1 : i)}
-            />
-          ))}
+          {/* Right - Accordion */}
+          <div
+            ref={ref}
+            className={`transition-all duration-1000 ${
+              visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+            }`}
+          >
+            {items.map((item, i) => (
+              <AccordionItem
+                key={i}
+                q={item.q}
+                a={item.a}
+                isOpen={openIndex === i}
+                onClick={() => setOpenIndex(openIndex === i ? -1 : i)}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </section>

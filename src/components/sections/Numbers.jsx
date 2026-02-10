@@ -7,14 +7,14 @@ function NumberCard({ number, unit, label, delay, visible }) {
 
   return (
     <div
-      className="text-center p-6"
+      className="text-center p-8"
       style={{ transitionDelay: `${delay}ms` }}
     >
-      <div className="text-5xl md:text-6xl font-black text-white mb-2">
+      <div className="text-5xl md:text-7xl font-black text-white mb-3 tracking-tight">
         {typeof count === 'number' ? count : number}
-        <span className="text-2xl md:text-3xl font-bold text-primary-200">{unit}</span>
+        <span className="text-2xl md:text-3xl font-bold text-primary-300">{unit}</span>
       </div>
-      <div className="text-primary-200 text-sm font-medium">{label}</div>
+      <div className="text-gray-400 text-sm font-medium tracking-wide">{label}</div>
     </div>
   )
 }
@@ -25,28 +25,36 @@ export default function Numbers() {
   const items = t('numbers.items', { returnObjects: true })
 
   return (
-    <section className="py-20 bg-gradient-to-br from-primary via-primary-dark to-primary-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t('numbers.title')}</h2>
-          <p className="text-primary-200 text-lg max-w-2xl mx-auto">{t('numbers.subtitle')}</p>
+    <section className="py-28 md:py-36 bg-gray-950">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="text-center mb-20">
+          <p className="text-xs font-semibold tracking-[0.2em] text-primary-300 uppercase mb-6">
+            RESULTS
+          </p>
+          <h2 className="text-4xl md:text-5xl font-black text-white mb-6 tracking-tight">
+            {t('numbers.title')}
+          </h2>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            {t('numbers.subtitle')}
+          </p>
         </div>
 
         <div
           ref={ref}
-          className={`grid grid-cols-2 lg:grid-cols-4 gap-6 transition-all duration-700 ${
-            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          className={`grid grid-cols-2 lg:grid-cols-4 gap-px bg-gray-800 rounded-2xl overflow-hidden transition-all duration-1000 ${
+            visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
           }`}
         >
           {items.map((item, i) => (
-            <NumberCard
-              key={i}
-              number={item.number}
-              unit={item.unit}
-              label={item.label}
-              delay={i * 200}
-              visible={visible}
-            />
+            <div key={i} className="bg-gray-950">
+              <NumberCard
+                number={item.number}
+                unit={item.unit}
+                label={item.label}
+                delay={i * 200}
+                visible={visible}
+              />
+            </div>
           ))}
         </div>
       </div>

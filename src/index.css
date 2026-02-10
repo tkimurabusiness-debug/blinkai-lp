@@ -7,36 +7,44 @@
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
   body {
     @apply font-sans text-gray-800 bg-white;
+    overflow-x: hidden;
+  }
+
+  /* Prevent text from breaking out of containers */
+  h1, h2, h3, h4, h5, h6, p, span, a {
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-accent rounded-lg shadow-lg hover:bg-amber-600 transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
+    @apply inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold text-white bg-primary rounded-full shadow-lg hover:bg-primary-light transition-all duration-300 hover:shadow-xl whitespace-nowrap;
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-primary rounded-lg shadow-lg hover:bg-primary-light transition-all duration-300 transform hover:scale-105;
+    @apply inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold text-primary bg-white border-2 border-primary rounded-full hover:bg-primary-50 transition-all duration-300 whitespace-nowrap;
   }
 
   .btn-line {
-    @apply inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white bg-line rounded-lg shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
+    @apply inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold text-white bg-line rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 hover:shadow-xl whitespace-nowrap;
   }
 
   .section-title {
-    @apply text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4;
+    @apply text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-900 mb-3 sm:mb-4 tracking-tight;
   }
 
   .section-subtitle {
-    @apply text-lg text-center text-gray-500 mb-12 max-w-2xl mx-auto;
+    @apply text-sm sm:text-base md:text-lg text-center text-gray-500 mb-8 sm:mb-12 max-w-2xl mx-auto;
   }
 
   .card {
-    @apply bg-white rounded-2xl shadow-lg p-8 transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+    @apply bg-white rounded-2xl shadow-sm border border-gray-100 p-5 sm:p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
   }
 
   .gradient-bg {
@@ -57,18 +65,32 @@ html {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #003db8;
-  border-radius: 4px;
+  background: #c4c4c4;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #002A80;
+  background: #999;
+}
+
+/* Selection color */
+::selection {
+  background: #0035A3;
+  color: white;
+}
+
+/* Line clamp utility */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
