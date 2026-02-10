@@ -1,0 +1,276 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "forCompanies": "Dành cho doanh nghiệp",
+    "forJobSeekers": "Tìm việc làm",
+    "contact": "Liên hệ",
+    "phone": "03-XXXX-XXXX",
+    "freeCta": "Tư vấn miễn phí"
+  },
+  "hero": {
+    "badge": "Nền tảng kết nối nhân lực nước ngoài",
+    "title1": "Giải quyết thiếu nhân lực ",
+    "titleHighlight": "3 ngày",
+    "title2": ".",
+    "subtitle": "Giới thiệu nhân lực nước ngoài trình độ N3-N5, chỉ tính phí khi tuyển dụng thành công. Không tốn phí ban đầu.",
+    "cta": "Tư vấn miễn phí ngay",
+    "secondaryCta": "Xem chi tiết dịch vụ",
+    "stats": {
+      "companies": "Doanh nghiệp",
+      "companiesNum": "120",
+      "companiesUnit": " đã sử dụng",
+      "matching": "Kết nối trung bình",
+      "matchingNum": "3",
+      "matchingUnit": " ngày",
+      "satisfaction": "Hài lòng",
+      "satisfactionNum": "98",
+      "satisfactionUnit": "%"
+    }
+  },
+  "logos": {
+    "title": "Được nhiều doanh nghiệp tin dùng"
+  },
+  "features": {
+    "title": "3 lý do chọn BlinkAI",
+    "subtitle": "Dịch vụ kết nối nhân lực kết hợp công nghệ AI, chuyên biệt cho lao động phổ thông",
+    "speed": {
+      "title": "Kết nối trong 3 ngày",
+      "desc": "AI tìm nhân lực phù hợp ngay lập tức. Nhanh gấp 10 lần so với cách truyền thống."
+    },
+    "cost": {
+      "title": "Chỉ trả phí thành công",
+      "desc": "Không phí ban đầu, không phí hàng tháng. Chỉ phát sinh chi phí khi tuyển dụng thành công."
+    },
+    "quality": {
+      "title": "Chuyên biệt lao động phổ thông",
+      "desc": "Chuyên ngành xây dựng, sản xuất, vận tải, chế biến thực phẩm. Tỷ lệ gắn bó trên 90%."
+    }
+  },
+  "numbers": {
+    "title": "BlinkAI qua những con số",
+    "subtitle": "Thành tích vững chắc, giải quyết bài toán thiếu nhân lực",
+    "items": [
+      { "number": "3", "unit": " ngày", "label": "Thời gian kết nối TB" },
+      { "number": "120", "unit": "+", "label": "Doanh nghiệp sử dụng" },
+      { "number": "98", "unit": "%", "label": "Mức độ hài lòng" },
+      { "number": "90", "unit": "%+", "label": "Tỷ lệ gắn bó" }
+    ]
+  },
+  "target": {
+    "title": "Phù hợp với doanh nghiệp nào?",
+    "subtitle": "Nếu có bất kỳ điều nào phù hợp, hãy liên hệ ngay",
+    "items": [
+      "Đang thiếu nhân lực trầm trọng",
+      "Muốn tuyển lao động nước ngoài nhưng chưa biết cách",
+      "Muốn giảm chi phí tuyển dụng",
+      "Thủ tục visa phức tạp",
+      "Cần nhân lực có trình độ tiếng Nhật tốt",
+      "Cần người làm việc ngay"
+    ]
+  },
+  "testimonials": {
+    "title": "Phản hồi từ khách hàng",
+    "subtitle": "Ý kiến từ các doanh nghiệp đã sử dụng BlinkAI",
+    "items": [
+      {
+        "name": "Tanaka Taro",
+        "role": "Giám đốc",
+        "company": "Công ty xây dựng A",
+        "text": "Công trường thiếu người nghiêm trọng, nhưng chỉ 3 ngày sau khi liên hệ BlinkAI, chúng tôi đã nhận được nhân lực Việt Nam xuất sắc.",
+        "industry": "Xây dựng"
+      },
+      {
+        "name": "Sato Hanako",
+        "role": "Trưởng phòng nhân sự",
+        "company": "Công ty sản xuất B",
+        "text": "Chỉ trả phí khi thành công nên rất yên tâm. Ứng viên trình độ N3, giao tiếp tốt. Tỷ lệ gắn bó rất ấn tượng.",
+        "industry": "Sản xuất"
+      },
+      {
+        "name": "Suzuki Ichiro",
+        "role": "Quản lý nhà máy",
+        "company": "Công ty chế biến C",
+        "text": "Hỗ trợ cả thủ tục visa nên rất tiện. AI kết nối chính xác, lần nào cũng giới thiệu nhân lực vượt mong đợi.",
+        "industry": "Chế biến thực phẩm"
+      }
+    ]
+  },
+  "worries": {
+    "title": "Giải đáp những lo ngại",
+    "subtitle": "Đừng lo lắng về việc tuyển dụng lao động nước ngoài",
+    "items": [
+      {
+        "worry": "Chi phí cao...",
+        "answer": "Hoàn toàn trả phí theo kết quả. Không phí ban đầu, không phí hàng tháng."
+      },
+      {
+        "worry": "Mất thời gian...",
+        "answer": "AI kết nối nhanh gấp 10 lần. Chỉ 3 ngày để giới thiệu ứng viên."
+      },
+      {
+        "worry": "Thủ tục phức tạp...",
+        "answer": "Hỗ trợ toàn bộ thủ tục visa và giấy phép cư trú."
+      },
+      {
+        "worry": "Lo ngại tuyển người nước ngoài...",
+        "answer": "Chỉ giới thiệu nhân lực N3-N5. Tỷ lệ gắn bó trên 90%. Hỗ trợ sau tuyển dụng."
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Bảng giá",
+    "subtitle": "Miễn phí hoàn toàn cho đến khi tuyển dụng thành công",
+    "free": "0 yên",
+    "freeLabel": "Cho đến khi tuyển dụng",
+    "items": [
+      { "label": "Phí ban đầu", "value": "Miễn phí" },
+      { "label": "Phí hàng tháng", "value": "Miễn phí" },
+      { "label": "Giới thiệu ứng viên", "value": "Miễn phí" },
+      { "label": "Khi tuyển dụng thành công", "value": "Trả phí" }
+    ],
+    "note": "※Chi tiết phí vui lòng liên hệ"
+  },
+  "flow": {
+    "title": "Quy trình sử dụng",
+    "subtitle": "4 bước đơn giản từ liên hệ đến tuyển dụng",
+    "steps": [
+      { "title": "Liên hệ", "desc": "Gửi form hoặc gọi điện" },
+      { "title": "Trao đổi", "desc": "Tìm hiểu nhu cầu nhân lực" },
+      { "title": "Giới thiệu", "desc": "AI chọn ứng viên phù hợp trong 3 ngày" },
+      { "title": "Tuyển dụng", "desc": "Hỗ trợ phỏng vấn và thủ tục visa" }
+    ]
+  },
+  "faq": {
+    "title": "Câu hỏi thường gặp",
+    "items": [
+      { "q": "Phí ban đầu thực sự miễn phí?", "a": "Đúng vậy, hoàn toàn miễn phí cho đến khi tuyển dụng thành công." },
+      { "q": "Hỗ trợ những ngành nghề nào?", "a": "Xây dựng, sản xuất, vận tải, chế biến thực phẩm và các ngành lao động phổ thông." },
+      { "q": "Trình độ tiếng Nhật của ứng viên?", "a": "Giới thiệu ứng viên từ N3 đến N5 theo yêu cầu." },
+      { "q": "Có hỗ trợ thủ tục visa?", "a": "Có, hỗ trợ toàn bộ thủ tục visa và giấy phép cư trú." },
+      { "q": "Nhanh nhất bao lâu?", "a": "Nhờ AI, nhanh nhất 3 ngày có ứng viên." },
+      { "q": "Có hỗ trợ sau tuyển dụng?", "a": "Có, theo dõi định kỳ để đảm bảo nhân lực gắn bó." }
+    ]
+  },
+  "finalCta": {
+    "title": "Hãy giải quyết bài toán thiếu nhân lực ngay!",
+    "subtitle": "Phản hồi trong vòng 24 giờ sau khi liên hệ",
+    "cta": "Tư vấn miễn phí ngay",
+    "note": "Không phí ban đầu - Chỉ trả phí khi thành công"
+  },
+  "contactForm": {
+    "title": "Form tư vấn miễn phí",
+    "subtitle": "Vui lòng điền thông tin. Chúng tôi sẽ liên hệ trong 24 giờ.",
+    "companyName": "Tên công ty",
+    "companyPlaceholder": "Công ty TNHH...",
+    "name": "Người phụ trách",
+    "namePlaceholder": "Nguyễn Văn A",
+    "phone": "Số điện thoại",
+    "phonePlaceholder": "03-1234-5678",
+    "email": "Email",
+    "emailPlaceholder": "info@example.com",
+    "industry": "Ngành nghề",
+    "industryOptions": ["Xây dựng", "Sản xuất", "Vận tải", "Chế biến thực phẩm", "Khác"],
+    "headcount": "Số lượng tuyển",
+    "headcountOptions": ["1-3 người", "4-10 người", "Trên 11 người", "Chưa xác định"],
+    "message": "Nội dung tư vấn (tùy chọn)",
+    "messagePlaceholder": "Vui lòng nhập",
+    "submit": "Gửi yêu cầu tư vấn",
+    "privacy": "Đồng ý xử lý thông tin cá nhân"
+  },
+  "footer": {
+    "company": "Công ty BlinkAI",
+    "description": "Nền tảng kết nối nhân lực nước ngoài bằng công nghệ AI",
+    "service": "Dịch vụ",
+    "forCompanies": "Dành cho doanh nghiệp",
+    "forJobSeekers": "Tìm việc làm",
+    "about": "Về chúng tôi",
+    "privacy": "Chính sách bảo mật",
+    "terms": "Điều khoản sử dụng",
+    "contact": "Liên hệ",
+    "copyright": "Công ty BlinkAI. All Rights Reserved."
+  },
+  "jobSeeker": {
+    "hero": {
+      "badge": "Hoàn toàn miễn phí - Dễ dàng qua LINE",
+      "title1": "Hoàn tất qua LINE.",
+      "title2": "Tìm việc tại Nhật, ",
+      "titleHighlight": "3 ngày",
+      "title3": " có kết quả.",
+      "subtitle": "Không cần gọi điện, dùng tiếng mẹ đẻ. Đăng ký LINE và tìm công việc phù hợp.",
+      "lineCta": "Thêm bạn LINE",
+      "scanQr": "Quét mã QR"
+    },
+    "benefits": {
+      "noPhone": "Không cần gọi điện",
+      "noPhoneDesc": "Chỉ cần LINE",
+      "nativeLang": "Tiếng mẹ đẻ OK",
+      "nativeLangDesc": "Hỗ trợ ngôn ngữ của bạn",
+      "fast": "3 ngày có kết quả",
+      "fastDesc": "Giới thiệu việc nhanh",
+      "free": "Hoàn toàn miễn phí",
+      "freeDesc": "Không tốn bất kỳ chi phí nào"
+    },
+    "jobs": {
+      "title": "Các công việc hiện có",
+      "subtitle": "Giới thiệu công việc phù hợp với bạn",
+      "items": [
+        { "title": "Xây dựng", "salary": "1,200〜1,800 yên/giờ", "icon": "construction" },
+        { "title": "Sản xuất", "salary": "1,100〜1,600 yên/giờ", "icon": "factory" },
+        { "title": "Vận chuyển", "salary": "1,100〜1,500 yên/giờ", "icon": "truck" },
+        { "title": "Chế biến thực phẩm", "salary": "1,000〜1,400 yên/giờ", "icon": "utensils" }
+      ]
+    },
+    "senpai": {
+      "title": "Chia sẻ từ các anh chị",
+      "subtitle": "Những người đã tìm được việc qua BlinkAI",
+      "items": [
+        {
+          "name": "Nguyễn Văn A",
+          "country": "Việt Nam",
+          "job": "Công nhân xây dựng",
+          "text": "Đăng ký qua LINE, 3 ngày sau có việc. Dù chỉ N4 vẫn được. Bây giờ mỗi ngày đi làm đều vui.",
+          "flag": "VN"
+        },
+        {
+          "name": "Ram B",
+          "country": "Nepal",
+          "job": "Chế biến thực phẩm",
+          "text": "Được tư vấn bằng tiếng mẹ đẻ nên rất an tâm. Thủ tục visa được hỗ trợ hết, thực sự rất biết ơn.",
+          "flag": "NP"
+        },
+        {
+          "name": "Maria C",
+          "country": "Philippines",
+          "job": "Sản xuất",
+          "text": "Không giỏi gọi điện nhưng LINE giải quyết hết. Lương tốt, đã giới thiệu cho bạn bè.",
+          "flag": "PH"
+        }
+      ]
+    },
+    "howTo": {
+      "title": "Cách sử dụng",
+      "subtitle": "Chỉ 4 bước để tìm được việc",
+      "steps": [
+        { "title": "Thêm LINE", "desc": "Chỉ cần thêm bạn (1 phút)", "time": "1 phút" },
+        { "title": "Nhập thông tin", "desc": "Trả lời câu hỏi của AI", "time": "5 phút" },
+        { "title": "Nhận giới thiệu", "desc": "Nhận việc phù hợp với bạn", "time": "Trong 3 ngày" },
+        { "title": "Phỏng vấn", "desc": "Hỗ trợ cả phỏng vấn", "time": "" }
+      ]
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp",
+      "items": [
+        { "q": "Có tốn tiền không?", "a": "Không, hoàn toàn miễn phí." },
+        { "q": "N5 có được không?", "a": "Được, từ N5 có thể giới thiệu việc." },
+        { "q": "Có hỗ trợ visa?", "a": "Có, hỗ trợ toàn bộ thủ tục visa." },
+        { "q": "Có những việc gì?", "a": "Xây dựng, sản xuất, vận tải, chế biến thực phẩm v.v." }
+      ]
+    },
+    "finalCta": {
+      "title": "Đăng ký LINE ngay",
+      "subtitle": "Hoàn tất trong 1 phút. Hoàn toàn miễn phí.",
+      "lineCta": "Thêm bạn LINE",
+      "scanQr": "Quét mã QR"
+    }
+  }
+}
