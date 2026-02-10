@@ -33,7 +33,8 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-xs font-semibold tracking-widest uppercase mb-5">{t('footer.about')}</h3>
             <ul className="space-y-3">
-              <li><a href="#" className="text-sm hover:text-white transition-colors">{t('footer.about')}</a></li>
+              <li><Link to="/company" className="text-sm hover:text-white transition-colors">{t('footer.about')}</Link></li>
+              <li><Link to="/ceo" className="text-sm hover:text-white transition-colors">代表挨拶</Link></li>
               <li><a href="#" className="text-sm hover:text-white transition-colors">{t('footer.privacy')}</a></li>
               <li><a href="#" className="text-sm hover:text-white transition-colors">{t('footer.terms')}</a></li>
             </ul>

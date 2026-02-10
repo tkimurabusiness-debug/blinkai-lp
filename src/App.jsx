@@ -6,6 +6,8 @@ import Footer from './components/common/Footer'
 import Home from './pages/Home'
 import ForCompanies from './pages/ForCompanies'
 import ForJobSeekers from './pages/ForJobSeekers'
+import CeoMessage from './pages/CeoMessage'
+import Company from './pages/Company'
 import { detectLanguageByIP } from './utils/detectLanguage'
 
 function ScrollToTop() {
@@ -34,6 +36,8 @@ export default function App() {
           <Route path="/" element={<><ScrollToTop /><Home /></>} />
           <Route path="/for-companies" element={<><ScrollToTop /><ForCompanies /></>} />
           <Route path="/for-job-seekers" element={<><ScrollToTop /><ForJobSeekers /></>} />
+          <Route path="/ceo" element={<><ScrollToTop /><CeoMessage /></>} />
+          <Route path="/company" element={<><ScrollToTop /><Company /></>} />
         </Routes>
       </main>
       <Footer />

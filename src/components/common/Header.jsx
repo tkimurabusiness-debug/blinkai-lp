@@ -22,6 +22,8 @@ export default function Header() {
     { to: '/', label: t('nav.home') },
     { to: '/for-companies', label: t('nav.forCompanies') },
     { to: '/for-job-seekers', label: t('nav.forJobSeekers') },
+    { to: '/company', label: '会社概要' },
+    { to: '/ceo', label: '代表挨拶' },
   ]
 
   return (

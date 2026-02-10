@@ -5,6 +5,10 @@ import Numbers from '../components/sections/Numbers'
 import Target from '../components/sections/Target'
 import Testimonials from '../components/sections/Testimonials'
 import CaseStudies from '../components/sections/CaseStudies'
+import BrandPromise from '../components/sections/BrandPromise'
+import CategoryBrowse from '../components/sections/CategoryBrowse'
+import MidCTA from '../components/sections/MidCTA'
+import Compliance from '../components/sections/Compliance'
 import Worries from '../components/sections/Worries'
 import Pricing from '../components/sections/Pricing'
 import Flow from '../components/sections/Flow'
@@ -18,6 +22,9 @@ export default function ForCompanies() {
     <>
       <Hero />
       <LogoBar />
+      <CategoryBrowse />
+      <BrandPromise />
+      <MidCTA />
       <Features />
       <CaseStudies />
       <Numbers />
@@ -26,6 +33,7 @@ export default function ForCompanies() {
       <Worries />
       <Pricing />
       <Flow />
+      <Compliance />
       <FinalCTA />
       <ContactForm />
       <FAQ />
