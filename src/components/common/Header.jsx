@@ -37,7 +37,7 @@ export default function Header() {
             <img
               src="/images/logo_wide.png"
               alt="BLINK AI"
-              className="h-7 sm:h-8 lg:h-10 w-auto object-contain"
+              className="h-9 sm:h-10 lg:h-12 w-auto object-contain"
             />
           </Link>
 

@@ -17,7 +17,7 @@ export default function Company() {
   const companyInfo = [
     { label: '会社名', value: 'BlinkAI株式会社（BlinkAI Inc.）' },
     { label: '設立', value: '2023年' },
-    { label: '代表取締役', value: '木村 丈蔵', link: '/ceo' },
+    { label: '代表取締役', value: '木村 竹蔵', link: '/ceo' },
     { label: '所在地', value: '〒150-0000 東京都渋谷区○○ ○-○-○ ○○ビル○F' },
     { label: '電話番号', value: '03-XXXX-XXXX' },
     { label: 'メール', value: 'info@blinkai.jp' },

@@ -89,7 +89,7 @@ export default function CeoMessage() {
                   {/* Name overlay */}
                   <div className="absolute bottom-4 sm:bottom-6 left-4 sm:left-6 right-4 sm:right-6">
                     <p className="text-xs sm:text-sm font-medium text-white/80 mb-1">代表取締役</p>
-                    <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">木村 丈蔵</h2>
+                    <h2 className="text-xl sm:text-2xl font-black text-white tracking-tight">木村 竹蔵</h2>
                   </div>
                 </div>
 
